@@ -1,6 +1,7 @@
 package ultimatetest;
 
 public class Calculator {
+	
 
     // Method to add two numbers
     public int add(int num1, int num2) {

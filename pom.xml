@@ -4,7 +4,6 @@
   <artifactId>ultimatetest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-    <!-- Add this TestNG dependency -->
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
@@ -12,5 +11,4 @@
         <scope>test</scope>
     </dependency>
 </dependencies>
-  
 </project>
