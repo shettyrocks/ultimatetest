@@ -3,6 +3,8 @@ package ultimatetest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import utils.ExcelUtils;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
