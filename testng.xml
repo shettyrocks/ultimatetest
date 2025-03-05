@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyTestSuite" verbose="1" parallel="false">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+        <listener class-name="org.testng.reporters.XMLReporter" />
+    </listeners>
+    <test name="Test">
+        <!-- Run all test classes from multiple packages -->
+        <packages>
+            <package name="ultimatetest" />
+            <!--<package name="com.example.tests" /> -->
+        </packages>
+    </test>
+</suite>
+

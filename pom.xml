@@ -14,6 +14,20 @@
         <target>1.8</target>
       </configuration>
     </plugin>
+     <!-- Surefire Plugin for running TestNG tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <!-- Specify the testng.xml configuration file -->
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                <!-- Output the results to the specified directory -->
+                <reportsDirectory>target/test-classes/test-output</reportsDirectory>
+            </configuration>
+        </plugin>
   </plugins>
 </build>
   <dependencies>
@@ -37,6 +51,17 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
         <version>1.9.0</version>
+    </dependency>
+     <!-- Log4j2 Core Library -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.19.0</version> <!-- Use the latest version -->
+    </dependency>
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.19.0</version> <!-- Use the latest version -->
     </dependency>
 </dependencies>
 </project>
